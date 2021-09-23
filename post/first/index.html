@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>First - 我的GitHub页面</title><meta name="Description" content=""><meta property="og:title" content="First" />
+<meta property="og:description" content="Hello Hugo 部署时遇到的问题 1、在本地启动server时遇到了问题 因为是使用了虚拟机加宝塔面板来部署，所以并不是通过访问localhost:1313" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://poxiao.github.io/post/first/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-09-23T20:38:56+08:00" />
+<meta property="article:modified_time" content="2021-09-23T20:38:56+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="First"/>
+<meta name="twitter:description" content="Hello Hugo 部署时遇到的问题 1、在本地启动server时遇到了问题 因为是使用了虚拟机加宝塔面板来部署，所以并不是通过访问localhost:1313"/>
+<meta name="application-name" content="我的GitHub页面">
+<meta name="apple-mobile-web-app-title" content="我的GitHub页面"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://poxiao.github.io/post/first/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "First",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/poxiao.github.io\/post\/first\/"
+        },"genre": "post","wordcount":  586 ,
+        "url": "https:\/\/poxiao.github.io\/post\/first\/","datePublished": "2021-09-23T20:38:56+08:00","dateModified": "2021-09-23T20:38:56+08:00","publisher": {
+            "@type": "Organization",
+            "name": "作者"},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="我的GitHub页面">我的GitHub页面</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的GitHub页面">我的GitHub页面</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">First</h1><div class="content" id="content"><h3 id="hello-hugo">Hello Hugo</h3>
+<p>部署时遇到的问题</p>
+<p>1、在本地启动server时遇到了问题</p>
+<p>因为是使用了虚拟机加宝塔面板来部署，所以并不是通过访问localhost:1313来访问站点，</p>
+<p>而是通过宝塔反代来尝试访问，结果出现了主题显示不正常的情况</p>
+<p>这个问题在配置了站点根目录的config.toml之后也可以解决</p>
+<p>可以改进的地方
+通过git或者syncthing或者ftp等各种方式对content文件夹进行同步。</p>
+<p>自己写一个python脚本，每过一段时间检测content文件夹里面的文件是否有改动，如果有改动，在终端执行命令hugo来生成静态文件。</p>
+<p>这样也可以实现自动更新。</p>
+<p>个人观点
+hugo的部署相比起hexo，是要方便一些。</p>
+<p>但是hugo虽然是足够快，主题基本上都比较老，或者说比较难找到我满意的。我找到的基本都是16年的，而且有不少主题作者都已经停止更新了。不过也可能是因为我只是尝鲜一下，没有认真去找主题吧。</p>
+<p>而且其实，相比起安装、部署，有一个更耗精力的地方其实是主题的DIY。一个主题即便是本身做得多么好，到我手上的时候肯定不是一开始就完全符合我的需求的，因此需要自己手动修改一些地方。而这，才是最麻烦、坑最多的地方。</p>
+<p>而且严格来说，虽然是部署相对简便一些，但是后续的维护和使用其实和hexo是差不多的（对我来说都是有一点麻烦）。无非就是因为go语言的，生成的速度要快一些。</p>
+<p>对我来说仍然是一个不会选用的博客框架。</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
